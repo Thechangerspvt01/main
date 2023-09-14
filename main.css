@@ -1,0 +1,97 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body,html{
+    width:100%;
+    height:100%;
+    background-image: url(https://i.pinimg.com/originals/a5/c4/18/a5c4180a20b8283da664ecf47370cf98.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+
+}
+/* navbar css begin here*/
+#nav{
+    width:100%;
+    height:10%;
+    background-color: rgba(0, 0, 0, 0.435);
+    display:flex;
+    justify-content:space-between;
+    cursor: default;
+    position:fixed;
+    z-index:99;
+}
+#logo{
+display:flex;
+align-items: center;
+height:100%;
+width:12vw;
+text-transform: capitalize;
+margin-left:50px;
+}
+#logo h2 span{
+    color:crimson;
+}
+#nav #logo #mb{
+  display:none;
+}
+#nav #components h4:hover{
+ color:crimson;
+ text-decoration:underline;
+}
+#nav #components #hm{
+   
+  display:none;
+  }
+#components{
+    display:flex;
+    gap:5vw;
+    align-items:center;
+    margin-right:20px;
+    text-transform: capitalize;
+    
+}
+/*  main css part begin here*/
+#main{
+    width:100%;
+    height:100%;
+    background-color:rgba(0, 0, 0, 0.312);
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    position: relative;
+}
+#page1{
+
+    width:50%;
+    height:80%;
+   display:flex;
+   align-items: center;
+    justify-content: center;
+}
+#main #page1 h1{
+ font-size: 6vw;
+
+}
+#main #page1 h1 span{
+    color:crimson;
+}
+@media (max-width:600px) {
+    
+    #nav #logo #mb{
+        display:block;
+      }
+      #nav #logo #pc{
+        display:none;
+      }
+      #components h4{
+      display:none;
+      }
+      #nav #components #hm{
+   
+        display:block;
+        }
+}
